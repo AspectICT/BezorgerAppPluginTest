@@ -1,4 +1,4 @@
-package com.plugin.deliverdd.bezorgerapp.plugin;
+package com.plugin.deliverdd.bezorgerapp.plugin.Location;
 
 import android.location.Location;
 import android.os.Bundle;

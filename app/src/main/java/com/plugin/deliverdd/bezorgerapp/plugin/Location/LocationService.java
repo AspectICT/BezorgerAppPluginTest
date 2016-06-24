@@ -1,4 +1,4 @@
-package com.plugin.deliverdd.bezorgerapp.plugin;
+package com.plugin.deliverdd.bezorgerapp.plugin.Location;
 
 import android.Manifest;
 import android.app.Service;
@@ -11,12 +11,15 @@ import android.os.IBinder;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 
+import com.plugin.deliverdd.bezorgerapp.plugin.Location.Interfaces.ILocationService;
+import com.plugin.deliverdd.bezorgerapp.plugin.Location.Interfaces.ILocationUser;
+
 import java.util.ArrayList;
 
 /**
  * Created by Gerjan on 24-6-2016.
  */
-public class LocationService extends Service  {
+public class LocationService extends Service implements ILocationService {
 
     private LocationManager _locationManager;
 
