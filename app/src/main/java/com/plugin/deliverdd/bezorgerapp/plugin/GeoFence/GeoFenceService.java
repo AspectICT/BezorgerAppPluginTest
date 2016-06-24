@@ -6,6 +6,7 @@ import android.location.Location;
 import android.os.IBinder;
 import android.support.annotation.Nullable;
 
+import com.plugin.deliverdd.bezorgerapp.plugin.GeoFence.Interfaces.IGeoFenceUser;
 import com.plugin.deliverdd.bezorgerapp.plugin.Location.Interfaces.ILocationService;
 import com.plugin.deliverdd.bezorgerapp.plugin.Location.Interfaces.ILocationUser;
 
@@ -14,7 +15,7 @@ import java.util.ArrayList;
 /**
  * Created by Gerjan on 24-6-2016.
  */
-public class GeoFenceService extends Service implements ILocationUser {
+public class GeoFenceService implements ILocationUser {
 
     private ArrayList<GeoFence> _geoFences;
 
@@ -26,7 +27,6 @@ public class GeoFenceService extends Service implements ILocationUser {
         this._geoFences = new ArrayList<GeoFence>();
         this._geoFenceListeners = new ArrayList<IGeoFenceUser>();
     }
-
 
     public void addGeoFence(GeoFence geoFence){
         this._geoFences.add(geoFence);
@@ -51,10 +51,5 @@ public class GeoFenceService extends Service implements ILocationUser {
             }
         }
     }
-
-    @Nullable
-    @Override
-    public IBinder onBind(Intent intent) {
-        return null;
-    }
+    
 }

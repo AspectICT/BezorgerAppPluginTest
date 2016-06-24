@@ -28,10 +28,20 @@ public class LocationService extends Service implements ILocationService {
     private ArrayList<ILocationUser> _locationListeners;
 
     public LocationService() {
-        this._locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-        this._locationListener = new LocationListener(this);
         this._locationListeners = new ArrayList<ILocationUser> ();
-        this.initialize();
+    }
+
+    @Override
+    public void onCreate() {
+        this._locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        this._locationListeners = new ArrayList<ILocationUser> ();
+    }
+
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId){
+        this._locationListener = new LocationListener(this);
+        initialize();
+        return 1;
     }
 
     private void initialize(){
