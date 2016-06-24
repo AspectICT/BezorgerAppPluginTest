@@ -40,7 +40,7 @@ public class LocationService extends Service  {
                 LocationManager.GPS_PROVIDER, 5000, 10, _locationListener);
     }
 
-    private void onLocation(Location location) {
+    public void onLocation(Location location) {
         for (int i = 0; i<_locationListeners.size();i++){
             _locationListeners.get(i).onLocation(location);
         }
