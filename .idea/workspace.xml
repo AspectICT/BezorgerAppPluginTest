@@ -7,12 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9ae6083-3e2f-4a51-9995-bea48a08b4ac" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/plugin/deliverdd/bezorgerapp/plugin/Location/Interfaces/ILocationService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/plugin/deliverdd/bezorgerapp/plugin/ILocationUser.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/plugin/deliverdd/bezorgerapp/plugin/Location/Interfaces/ILocationUser.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/plugin/deliverdd/bezorgerapp/plugin/LocationListener.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/plugin/deliverdd/bezorgerapp/plugin/Location/LocationListener.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/plugin/deliverdd/bezorgerapp/plugin/LocationService.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/plugin/deliverdd/bezorgerapp/plugin/Location/LocationService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/plugin/deliverdd/bezorgerapp/plugin/GeoFence/GeoFence.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/plugin/deliverdd/bezorgerapp/plugin/GeoFence/GeoFenceService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/plugin/deliverdd/bezorgerapp/plugin/GeofenceService.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/plugin/deliverdd/bezorgerapp/plugin/GeofenceService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/plugin/deliverdd/bezorgerapp/plugin/Location/Interfaces/ILocationService.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/plugin/deliverdd/bezorgerapp/plugin/Location/Interfaces/ILocationService.java" />
     </list>
     <ignored path="Bezorgerapp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,16 +31,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ApplicationTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/com/plugin/deliverdd/bezorgerapp/ApplicationTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ExampleUnitTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/test/java/com/plugin/deliverdd/bezorgerapp/ExampleUnitTest.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -90,15 +78,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GeofenceService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/plugin/deliverdd/bezorgerapp/plugin/GeofenceService.java">
+      <file leaf-file-name="GeoFenceService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/plugin/deliverdd/bezorgerapp/plugin/GeoFence/GeoFenceService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46896553">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.6448276">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#772#773#0" expanded="true" />
-                <element signature="e#799#800#0" expanded="true" />
+                <element signature="e#815#816#0" expanded="true" />
+                <element signature="e#860#861#0" expanded="true" />
+                <element signature="e#1002#1003#0" expanded="true" />
+                <element signature="e#1029#1030#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GeoFence.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/plugin/deliverdd/bezorgerapp/plugin/GeoFence/GeoFence.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+              <folding>
+                <element signature="e#289#290#0" expanded="true" />
+                <element signature="e#353#354#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -142,7 +145,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/plugin/deliverdd/bezorgerapp/plugin/Location/Interfaces/ILocationService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
+              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -153,8 +156,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -1759,7 +1762,11 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/plugin/deliverdd/bezorgerapp/plugin/LocationUser.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/plugin/deliverdd/bezorgerapp/plugin/LocationService.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/plugin/deliverdd/bezorgerapp/plugin/ILocationService.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/plugin/deliverdd/bezorgerapp/plugin/Location/Interfaces/ILocationService.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/plugin/deliverdd/bezorgerapp/plugin/GeofenceService.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/plugin/deliverdd/bezorgerapp/plugin/GeoFenceService.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/plugin/deliverdd/bezorgerapp/plugin/GeoFence/GeoFence.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/plugin/deliverdd/bezorgerapp/plugin/GeoFence/GeoFenceService.java" />
       </list>
     </option>
   </component>
@@ -1869,6 +1876,10 @@
               <option name="myItemId" value="plugin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Location" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1893,6 +1904,58 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Location" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Interfaces" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bezorgerapp" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bezorgerapp" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GeoFence" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bezorgerapp" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bezorgerapp" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2193,7 +2256,13 @@
       <option name="project" value="LOCAL" />
       <updated>1466791697545</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Organize">
+      <created>1466792189184</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1466792189184</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2235,7 +2304,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Removed LocationUser" />
     <MESSAGE value="BugFix" />
-    <option name="LAST_COMMIT_MESSAGE" value="BugFix" />
+    <MESSAGE value="Organize" />
+    <option name="LAST_COMMIT_MESSAGE" value="Organize" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -2296,6 +2366,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/plugin/deliverdd/bezorgerapp/plugin/Location/Interfaces/ILocationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/plugin/deliverdd/bezorgerapp/plugin/Location/Interfaces/ILocationUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2328,22 +2406,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/plugin/deliverdd/bezorgerapp/plugin/Location/Interfaces/ILocationService.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/plugin/deliverdd/bezorgerapp/plugin/GeoFence/GeoFence.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
-          <folding />
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding>
+            <element signature="e#289#290#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/plugin/deliverdd/bezorgerapp/plugin/GeofenceService.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/plugin/deliverdd/bezorgerapp/plugin/GeoFence/GeoFenceService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46896553">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.6448276">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
-            <element signature="e#799#800#0" expanded="true" />
+            <element signature="e#815#816#0" expanded="true" />
+            <element signature="e#860#861#0" expanded="true" />
+            <element signature="e#1002#1003#0" expanded="true" />
+            <element signature="e#1029#1030#0" expanded="true" />
           </folding>
         </state>
       </provider>

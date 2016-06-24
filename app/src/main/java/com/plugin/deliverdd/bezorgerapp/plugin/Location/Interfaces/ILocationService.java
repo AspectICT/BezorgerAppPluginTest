@@ -5,5 +5,5 @@ package com.plugin.deliverdd.bezorgerapp.plugin.Location.Interfaces;
  */
 public interface ILocationService {
 
-    public void addLocationUser(ILocationUser listener);
+    void addLocationUser(ILocationUser listener);
 }
