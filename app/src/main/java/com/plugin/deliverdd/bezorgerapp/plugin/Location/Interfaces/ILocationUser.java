@@ -7,5 +7,5 @@ import android.location.Location;
  */
 public interface ILocationUser {
 
-    public void onLocation(Location location);
+    void onLocation(Location location);
 }

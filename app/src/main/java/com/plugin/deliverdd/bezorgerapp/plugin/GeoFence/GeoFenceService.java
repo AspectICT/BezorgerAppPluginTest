@@ -37,7 +37,6 @@ public class GeoFenceService extends Service implements ILocationUser {
         }
     }
 
-    @Override
     public void onLocation(Location location) {
         for (int i = 0; i<_geoFences.size();i++){
             if(_geoFences.get(i).inRadius(location)){

@@ -39,17 +39,16 @@ public class LocationService extends Service implements ILocationService {
                 ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
 
         }
-        _locationManager.requestLocationUpdates(
-                LocationManager.GPS_PROVIDER, 5000, 10, _locationListener);
+        _locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 10, _locationListener);
     }
 
-    //Trigger Callbacks
+    //Trigger callbacks
     public void onLocation(Location location) {
         for (int i = 0; i<_locationListeners.size();i++){
             _locationListeners.get(i).onLocation(location);
         }
     }
-    //Add Callback if not exits
+    //Add callback if not exits
     public void addLocationUser(ILocationUser listener){
        if(!_locationListeners.contains(listener)){
            _locationListeners.add(listener);
