@@ -43,11 +43,13 @@ public class LocationService extends Service implements ILocationService {
                 LocationManager.GPS_PROVIDER, 5000, 10, _locationListener);
     }
 
+    //Trigger Callbacks
     public void onLocation(Location location) {
         for (int i = 0; i<_locationListeners.size();i++){
             _locationListeners.get(i).onLocation(location);
         }
     }
+    //Add Callback if not exits
     public void addLocationUser(ILocationUser listener){
        if(!_locationListeners.contains(listener)){
            _locationListeners.add(listener);

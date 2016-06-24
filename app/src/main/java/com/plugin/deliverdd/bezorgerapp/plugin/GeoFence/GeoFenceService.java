@@ -17,11 +17,13 @@ import java.util.ArrayList;
 public class GeoFenceService extends Service implements ILocationUser {
 
     private ArrayList<GeoFence> _geoFences;
+    private ArrayList<IGeoFenceUser> _geoFenceListeners;
 
     public GeoFenceService(ILocationService locationService){
         super();
         locationService.addLocationUser(this);
         this._geoFences = new ArrayList<GeoFence>();
+        this._geoFenceListeners = new ArrayList<IGeoFenceUser>();
     }
 
 
@@ -29,9 +31,21 @@ public class GeoFenceService extends Service implements ILocationUser {
         this._geoFences.add(geoFence);
     }
 
+    public void addGeoFenceUser(IGeoFenceUser listener){
+        if(!_geoFenceListeners.contains(listener)){
+            _geoFenceListeners.add(listener);
+        }
+    }
+
     @Override
     public void onLocation(Location location) {
-
+        for (int i = 0; i<_geoFences.size();i++){
+            if(_geoFences.get(i).inRadius(location)){
+                for (int l = 0; l<_geoFenceListeners.size();l++){
+                    _geoFenceListeners.get(l).onGeoFence(_geoFences.get(i));
+                }
+            }
+        }
     }
 
     @Nullable
