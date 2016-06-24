@@ -17,11 +17,12 @@ import java.util.ArrayList;
 public class GeoFenceService extends Service implements ILocationUser {
 
     private ArrayList<GeoFence> _geoFences;
+
     private ArrayList<IGeoFenceUser> _geoFenceListeners;
 
     public GeoFenceService(ILocationService locationService){
         super();
-        locationService.addLocationUser(this);
+        locationService.addLocationListener(this);
         this._geoFences = new ArrayList<GeoFence>();
         this._geoFenceListeners = new ArrayList<IGeoFenceUser>();
     }
@@ -31,7 +32,11 @@ public class GeoFenceService extends Service implements ILocationUser {
         this._geoFences.add(geoFence);
     }
 
-    public void addGeoFenceUser(IGeoFenceUser listener){
+    public void removeGeoFence(GeoFence geoFence){
+        this._geoFences.remove(geoFence);
+    }
+
+    public void addGeoFenceListener(IGeoFenceUser listener){
         if(!_geoFenceListeners.contains(listener)){
             _geoFenceListeners.add(listener);
         }

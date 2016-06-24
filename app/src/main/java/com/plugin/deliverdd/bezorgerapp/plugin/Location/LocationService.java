@@ -49,7 +49,7 @@ public class LocationService extends Service implements ILocationService {
         }
     }
     //Add callback if not exits
-    public void addLocationUser(ILocationUser listener){
+    public void addLocationListener(ILocationUser listener){
        if(!_locationListeners.contains(listener)){
            _locationListeners.add(listener);
        }
