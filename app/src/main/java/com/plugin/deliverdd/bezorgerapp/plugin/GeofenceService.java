@@ -9,10 +9,11 @@ import android.support.annotation.Nullable;
 /**
  * Created by Gerjan on 24-6-2016.
  */
-public class GeofenceService extends LocationUser {
+public class GeofenceService extends Service implements ILocationUser {
 
     public GeofenceService(LocationService locationService){
-        super(locationService);
+        super();
+        locationService.addLocationUser(this);
     }
 
 
