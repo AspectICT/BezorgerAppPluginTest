@@ -2,6 +2,7 @@ package com.plugin.deliverdd.bezorgerapp.plugin.Location;
 
 import android.location.Location;
 import android.os.Bundle;
+import java.sql.*;
 
 /**
  * Created by Gerjan on 24-6-2016.
@@ -12,6 +13,8 @@ public class LocationListener implements android.location.LocationListener {
     public  LocationListener(LocationService locationService){
         super();
         this._locationService = locationService;
+
+        // start sqllite database
     }
 
     @Override
