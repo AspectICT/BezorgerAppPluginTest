@@ -1,9 +1,12 @@
 package com.plugin.deliverdd.bezorgerapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.location.LocationManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.plugin.deliverdd.bezorgerapp.plugin.Location.LocationService;
 
 public class TestActivity extends AppCompatActivity {
 
@@ -11,7 +14,6 @@ public class TestActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test_activetie);
-        LocationManager locationManager = (LocationManager)
-                getSystemService(Context.LOCATION_SERVICE);
+        startService(new Intent(getBaseContext(), LocationService.class));
     }
 }

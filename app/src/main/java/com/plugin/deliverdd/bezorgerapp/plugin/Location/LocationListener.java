@@ -24,7 +24,6 @@ public class LocationListener implements android.location.LocationListener {
 
     @Override
     public void onStatusChanged(String s, int i, Bundle bundle) {
-
     }
 
     @Override
